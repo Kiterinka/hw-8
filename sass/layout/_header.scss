@@ -1,0 +1,95 @@
+@media screen and (max-width:767px) {
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ECECEC;}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.page-header__menu {
+    display: none;}
+.page-header__contact {
+    display: none;}    
+.open-mobile-btn {
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;}  
+.open-mobile-btn__icon {
+     width: 24px;
+     height: 16px;}} 
+@media screen and (min-width: 768px) {
+    .open-mobile-btn {
+        display: none;}
+    .header {
+        padding-top: 26px;
+        padding-bottom: 26px;}
+    .page-header {
+        display: flex;
+        column-gap: 50px;
+        align-items: center;
+        justify-content: space-between;}
+    .page-header__menu {
+        display: flex;}
+    .page-header__contact {
+        display: block;}
+    .page-header__link {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        @include font($fw:500);
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+        text-decoration : none;
+        transition: color var(--transition-dur-and-func);
+         &:hover,
+         &:focus {
+            color:var(--accent-color);}}
+    .page-header__after::after {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 4px;
+        background: var(--accent-color);
+        border-radius: 2px;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;}
+    .page-header__link.page-header__after {
+        color: var(--accent-color);}             
+    .header-contact{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        @include font($fw:500);
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color:var(--header-list-link-contact);
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        transition: color var(--transition-dur-and-func);
+         &:hover,
+         &:focus {
+            color: var(--accent-color);}}   
+    .header-contact__mail-phone {
+        fill: var(--secondary-text-color);
+        transition: fill var(--transition-dur-and-func);
+    .header-contact:hover &,
+    .header-contact:focus & {
+        fill: var(--accent-color);}}}
+@media screen and (min-width: 1200px) {
+    .header {
+        padding-top: 24px;
+        padding-bottom: 24px;}
+    .page-header__after::after {
+        margin-top: 28px;}
+    .page-header__contact {
+        display: flex;
+        column-gap: 30px;}}
+
+
+
+
