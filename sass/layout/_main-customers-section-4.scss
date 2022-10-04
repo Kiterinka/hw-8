@@ -4,7 +4,7 @@
 .main-customers__list {
     display: flex;
     justify-content: center;
-    column-gap: 30px;
+    gap: 30px;
     flex-wrap: wrap;
     margin-bottom: auto;}
 .main-customers__item {
@@ -27,7 +27,7 @@
     transition: fill var(--transition-dur-and-func);
 .main-customers__link:hover &,
 .main-customers__link:focus & { 
-        fill: var(--accent-color);}}
+    fill: var(--accent-color);}}
  
 @media screen and (min-width: 768px) {
 .main-customers__list {

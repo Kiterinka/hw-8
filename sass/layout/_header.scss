@@ -24,10 +24,12 @@
         display: none;}
     .header {
         padding-top: 26px;
-        padding-bottom: 26px;}
+        padding-bottom: 26px;
+        border: 1px solid #ECECEC;
+        max-width: 100%;}
     .page-header {
         display: flex;
-        column-gap: 50px;
+        column-gap: 40px;
         align-items: center;
         justify-content: space-between;}
     .page-header__menu {

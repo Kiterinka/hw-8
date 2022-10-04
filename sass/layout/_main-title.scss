@@ -6,10 +6,12 @@
     url(../images/header-mob@1x.jpg);
     margin-left: auto;
     margin-right: auto;
-    background-size: 480px 400px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--title-background-color);}
+.title__wrapper {
+    width: 100%;}
 .title__item {
     margin-bottom: 30px; 
     margin-left: auto ;
@@ -47,11 +49,13 @@
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
 .title { 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/header-mob@2x.jpg);}} 
+      url(../images/header-mob@2x.jpg);}
+.title__wrapper {
+        width: 100%;}} 
 @media screen and (min-width:768px) {
 .title {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/Img.jpg);
+    url(../images/header-tab@1x.jpg);
     background-size: 768px 400px;}}
 @media screen and (min-width: 768px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -65,7 +69,7 @@
     padding-top: 200px; 
     padding-bottom: 200px;
   background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url(../images/Img.jpg);
+    url(../images/header@1x.jpg);
     background-size: 1600px 600px;}
 .title__item {
   @include font(44px,900);}}
